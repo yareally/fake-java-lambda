@@ -44,8 +44,7 @@ public class FakeLambda
      * @param <A> - Type A
      * @param <B> - Type B
      */
-    public interface ƛƛ<A, B>
-    {
+    public interface ƛƛ<A, B> {
         B apply(A a);
     }
 
@@ -57,8 +56,7 @@ public class FakeLambda
      *
      * @param <A> - Type A
      */
-    public interface ƛ<A>
-    {
+    public interface ƛ<A> {
         void apply(A a);
     }
 
@@ -72,8 +70,7 @@ public class FakeLambda
      *
      * @return a new list of items that meet the condition set in the function
      */
-    public static <A> List<A> filter(Iterable<A> data, ƛƛ<A, Boolean> predicate)
-    {
+    public static <A> List<A> filter(Iterable<A> data, ƛƛ<A, Boolean> predicate) {
         List<A> result = new ArrayList<>();
 
         for (A a : data) {
