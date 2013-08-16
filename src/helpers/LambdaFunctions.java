@@ -44,10 +44,8 @@ public class LambdaFunctions
      * @return the items in the list that match the given condition
      */
     public static List<String> filterData(List<String> data) {
-        return filter(data, new FakeLambda.ƛƛ<String, Boolean>()
-        {
-            public Boolean apply(String elem)
-            {
+        return filter(data, new FakeLambda.ƛƛ<String, Boolean>() {
+            public Boolean apply(String elem) {
                 return !elem.isEmpty();
             }
         });
@@ -65,10 +63,8 @@ public class LambdaFunctions
      * @return the newly reformatted list of strings
      */
     public static List<String> mapData(List<String> data) {
-        return map(data, new FakeLambda.ƛƛ<String, String>()
-        {
-            public String apply(String elem)
-            {
+        return map(data, new FakeLambda.ƛƛ<String, String>() {
+            public String apply(String elem) {
                 return String.format("-- %s --", elem);
             }
         });
